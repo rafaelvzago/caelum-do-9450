@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+  - name: put pubkey
+    lineinfile:
+      path: "/root/.ssh/authorized_keys"
+      line: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDMn7O8kC4Zd7lZdH3Xk8427iJJ+JwyBNcQLL2Z6ffN7aJGGsB5LBBsxGmOvPEpgsKM3K5HpN0IB7vvPVcnjabkEi0qw0aI8U7sfRlGsliJGxq2pLZIEbOY2HVu5IvI9lJmpOSP3OFbBwDGHaoRRkuUt72cwX7eIywrQuOXqf8060QdK06rXss/ug8JS00vWv97MZbWIhW3nMLaa9rvgWmg8HP/dt7xC1xdthvHtmIul9h9cHojRzOWQSDjlhAjTNYqwvtCYOhjTXvBKa0bwx5LwPenzhQhE0txZIcprOoo/M7ZqtWti171XBcbHA6Rysdye3fqvZ+ejtkYv106E8BW/pP0TLYhXwfmF3vGO6P2+yrGHixoKyuig8YNGsdm2HzgGW6m0ERV5K4A5qjbvtDnHN0v/VQtUwm8t2HqmavgVMS6+Czxp3ni5kjTBCaUnlCJeALuNzcgDNyneIx1gWbW9Xpz0HbzkOkIEuUxguCWgI4f95Z0o8fqV2Wbc8wNKPXMfIdoiIN4zAvpxRAvhZtsf6Kx4UTSFcZT+zT6tkr2Z160D+kiQu7mdSs/VXa4NllQpNFjuZfcMNYGNaHGb7mvGfA1cT5xcHaVmIsBNysL4FBlKxmid5aQRZgU6NW6v2B4fW/zW9qPW7CDHkdgA2ZVvCKfpcO/SGmTfKPEvRZXZQ== rafaelvzago@gmail.com"

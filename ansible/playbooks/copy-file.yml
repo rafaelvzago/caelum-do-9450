@@ -1,0 +1,13 @@
+---
+
+- hosts: all
+  gather_facts: false
+
+  tasks: 
+  - name: example copying file with owner and permissions
+    copy:
+      src: /root/foo.txt
+      dest: /tmp/foo.conf
+      owner: root
+      group: root
+      mode: 0644
