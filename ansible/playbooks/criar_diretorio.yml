@@ -1,7 +1,0 @@
-- hosts: all
-  remote_user: root
-  tasks:
-  - name: creating the root directory
-    file:
-      path: /root/curso-docker
-      state: directory

@@ -1,0 +1,30 @@
+- hosts: all
+  remote_user: root
+  tasks:
+
+  - name: creating the root directory
+    file:
+      path: /root/curso-docker/
+      state: directory
+  - name: creating php001 sample
+    file:
+      path: /root/curso-docker/php001
+      state: directory
+  - name: Copiando o exercicio php001
+    copy:
+      src: /home/rafael/Cursos/DO26/9450/php001/index.php
+      dest: /root/curso-docker/php001/index.php
+      owner: root
+      group: root
+      mode: 0644
+  - name: creating image1 sample
+    file:
+      path: /root/curso-docker/imagem1
+      state: directory
+  - name: Copiando o exercicio imagem1
+    copy:
+      src: /home/rafael/Cursos/DO26/9450/imagem1/meuarquivo.txt
+      dest: /root/curso-docker/imagem1/meuarquivo.txt
+      owner: root
+      group: root
+      mode: 0644

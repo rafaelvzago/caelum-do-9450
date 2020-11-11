@@ -4,10 +4,10 @@
   gather_facts: false
 
   tasks: 
-  - name: example copying file with owner and permissions
+  - name: Copiando o exercicio php001
     copy:
-      src: /root/foo.txt
-      dest: /tmp/foo.conf
+      src: /home/rafael/Cursos/DO26/9450/php001/*
+      dest: /root/curso-docker
       owner: root
       group: root
       mode: 0644
